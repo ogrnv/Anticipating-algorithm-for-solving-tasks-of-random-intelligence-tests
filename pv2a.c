@@ -299,7 +299,78 @@ void TTSR(){
 	Your code should first rearrange the chips of a given TB to obtain a different optimal TB in which formation of a straight horizontal or vertical or diagonal line of five or more chips with the same marking is completed. 
 	The code should then make an array of optimal moves i.e. array from-to addresses leading from the given TB to the optimal TB.
 	The code should then issue as TTSR results x0, y00, x1, y01 from the array, ignoring new input TBs until the step completes.
-	Optimal means "in accordance with the goal of the test round".*/
+	Optimal means "in accordance with the goal of the test round".
+	Take this example into account:
+
+given TB - use it in TTSR:
+0,1,2,0,2,1,2,1
+0,1,2,0,1,0,2,0
+1,1,0,2,0,2,1,1
+2,1,2,0,2,2,2,1
+0,2,2,1,0,2,0,2
+1,1,0,2,2,0,1,0
+2,1,0,2,2,0,2,1
+0,0,0,2,0,2,2,0
+Result - optimal TB:
+0,1,2,0,2,1,2,1
+0,1,2,0,1,0,2,0
+1,1,0,2,0,2,1,1
+2,1,2,0,2,2,2,1
+0,2,2,1,0,2,0,2
+1,1,0,0,0,0,1,0
+2,1,0,0,0,0,2,1
+2,2,2,2,2,2,2,0 
+Result - array:
+SA=[6,3] FA=[7,0]
+SA=[5,3] FA=[7,1]
+SA=[5,4] FA=[7,2]
+SA=[6,4] FA=[7,4]
+Result TTSR - {x0,y00,x1,y01} {6,3,7,0}
+next TB Do not use it in TTSR:
+0,1,2,0,2,1,2,1
+0,1,2,0,1,0,2,0
+1,1,0,2,0,2,1,1
+2,1,2,0,2,2,2,1
+0,2,2,1,0,2,0,2
+1,1,0,2,2,0,1,0
+2,1,0,0,2,0,2,1
+2,0,0,2,0,2,2,0
+Result TTSR - {x0,y00,x1,y01} {5,3,7,1}
+next TB Do not use it in TTSR:
+0,1,2,0,2,1,2,1
+0,1,2,0,1,0,2,0
+1,1,0,2,0,2,1,1
+2,1,2,0,2,2,2,1
+0,2,2,1,0,2,0,2
+1,1,0,0,2,0,1,0
+2,1,0,0,2,0,2,1
+2,2,0,2,0,2,2,0
+Result TTSR - {x0,y00,x1,y01} {5,4,7,2}
+next TB Do not use it in TTSR:
+0,1,2,0,2,1,2,1
+0,1,2,0,1,0,2,0
+1,1,0,2,0,2,1,1
+2,1,2,0,2,2,2,1
+0,2,2,1,0,2,0,2
+1,1,0,0,0,0,1,0
+2,1,0,0,2,0,2,1
+2,2,2,2,0,2,2,0
+Result TTSR - {x0,y00,x1,y01} {6,4,7,4}
+The step is completed.
+
+The next step begins.
+given TB - use it in TTSR:
+0,1,2,0,2,1,2,1
+0,1,2,0,1,0,2,0
+1,1,0,2,0,2,1,1
+2,1,2,1,2,2,2,1
+0,2,2,1,1,2,0,2
+1,1,0,0,0,0,1,0
+2,1,0,0,0,0,2,1
+2,0,1,0,2,0,2,1
+
+...
+*/
 }
 
 newdesk();
