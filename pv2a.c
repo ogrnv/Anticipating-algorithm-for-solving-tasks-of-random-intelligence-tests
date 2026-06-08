@@ -5,7 +5,7 @@ It is necessary to exclude the occurrence of any software loops, for example, wh
 
 example.c:
 */
-/*Source: https://github.com/ogrnv/Quantifying-how-close-is-a-coding-AI-to-AGI/tree/main*/
+/*Source: https://github.com/ogrnv/Anticipating-algorithm-for-solving-tasks-of-random-intelligence-tests*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/random.h>
