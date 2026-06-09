@@ -14,3 +14,17 @@ Your code should first rearrange the chips of a given TB to obtain a different o
 The code should then make an array of optimal moves i.e. array from-to addresses leading from the given TB to the optimal TB.
 The code should then issue as TTSR results x0, y00, x1, y01 from the array, ignoring new input TBs until the step completes.
 Optimal means "in accordance with the goal of the test round".
+<br><br>
+<b>The known best results of intelligence tests of AI-generated code for pv2a.c</b><br>the data was obtained with saving global variables before each call of an AI ​​code and restoring the variables after that:<br><br>
+8\*8 7 42 3000 12&nbsp; <b>310.966771821</b> gemini-3.5-flash us 2026-06-09 08:05:00<br><br>
+ * &nbsp; &nbsp; the number of:
+ * &nbsp; &nbsp; cells of the board
+ * &nbsp; &nbsp; chip types
+ * &nbsp; &nbsp; chips on the board
+ * &nbsp; &nbsp; rounds in a test
+ * &nbsp; &nbsp; steps in a round
+ * intelligence = 1000 / average number of moves made per step
+ * AI name
+ * country
+ * date and time of the code generation
+
