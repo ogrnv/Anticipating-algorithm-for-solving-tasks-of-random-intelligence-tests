@@ -28,3 +28,25 @@ Optimal means "in accordance with the goal of the test round".
  * country
  * date and time of the code generation
 
+<b>Statistics of gemini-3.5-flash 2026-06-09 08:05:00 in R:</b>
+
+con=file("means_3000t_1r_12s_raw_1x3000_12-8x8-7-42", "rb");<br>
+v<-c(readBin(con,"double",3000,size=4))<br>
+shapiro.test (v)<br>
+par(mfrow=c(1,1))<br>
+d <- density(v)<br>
+plot(d)<br>
+rez <- t.test(v, conf.level=0.9999)<br>
+ci <- rez$conf.int<br>
+ci[1]<br>
+ci[2]<br>
+ci[2]/ci[1]<br>
+
+	Shapiro-Wilk normality test
+
+data:  v<br>
+W = 0.85897, p-value < 2.2e-16<br>
+
+[1] 3.19098<br>
+[1] 3.240575<br>
+[1] 1.015542<br>
