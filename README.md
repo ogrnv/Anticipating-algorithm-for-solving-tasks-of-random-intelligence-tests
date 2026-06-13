@@ -17,6 +17,7 @@ Optimal means "in accordance with the goal of the test round".
 <br><br>
 <b>The known best results of intelligence tests of AI-generated code for pv2a.c</b><br>the data was obtained with saving global variables before each call of an AI ​​code and restoring the variables after that:<br><br>
 8\*8 7 42 3000 12&nbsp; <b>310.966771821</b> gemini-3.5-flash us 2026-06-09 08:05:00<br><br>
+8\*8 7 59 650 12&nbsp; <b>59.399</b> gemini-3.5-flash us 2026-06-09 08:05:00<br><br>
  * &nbsp; &nbsp; the number of:
  * &nbsp; &nbsp; cells of the board
  * &nbsp; &nbsp; chip types
@@ -42,11 +43,31 @@ ci[1]<br>
 ci[2]<br>
 ci[2]/ci[1]<br>
 
-	Shapiro-Wilk normality test
+Shapiro-Wilk normality test
 
 data:  v<br>
 W = 0.85897, p-value < 2.2e-16<br>
 
 [1] 3.19098<br>
 [1] 3.240575<br>
-[1] 1.015542<br>
+[1] 1.015542<br><br>
+con=file("means_650t_1r_12s_FF", "rb");
+v<-c(readBin(con,"double",3000,size=4))
+shapiro.test (v)
+par(mfrow=c(1,1))
+d <- density(v)
+plot(d)
+rez <- t.test(v, conf.level=0.9999)
+ci <- rez$conf.int
+ci[1]
+ci[2]
+ci[2]/ci[1]
+
+Shapiro-Wilk normality test
+
+data:  v<br>
+W = 0.91612, p-value < 2.2e-16
+
+[1] 15.42219<br>
+[1] 18.24832<br>
+[1] 1.183251<br>
