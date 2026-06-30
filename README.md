@@ -16,8 +16,9 @@ The code should then issue as TTSR results x0, y00, x1, y01 from the array, igno
 Optimal means "in accordance with the goal of the test round".
 <br><br>
 <b>The known best results of intelligence tests of AI-generated code for pv2a.c</b><br>the data was obtained with saving global variables before each call of an AI ​​code and restoring the variables after that:<br><br>
-8\*8 7 42 3000 12&nbsp; <b>310.966771821</b> gemini-3.5-flash us 2026-06-09 08:05:00<br><br>
-8\*8 7 59 650 12&nbsp; <b>59.399</b> gemini-3.5-flash us 2026-06-09 08:05:00<br><br>
+8\*8 7 59 1300 6&nbsp; <b>86.998</b> gemini-3.5-flash us 2026-06-29 09:03:00<br><br>
+8\*8 7 42 3000 12&nbsp; <b>310.967</b> gemini-3.5-flash us 2026-06-09 08:05:00<br><br>
+8\*8 7 59 &nbsp;650 12&nbsp; <b>59.399</b> gemini-3.5-flash us 2026-06-09 08:05:00<br><br>
 8\*8 7 59 1300 6&nbsp; <b>54.749</b> gemini-3.5-flash us 2026-06-09 08:05:00<br><br>
  * &nbsp; &nbsp; the number of:
  * &nbsp; &nbsp; cells of the board
@@ -29,6 +30,30 @@ Optimal means "in accordance with the goal of the test round".
  * AI name
  * country
  * date and time of the code generation
+
+<b>Statistics of gemini-3.5-flash 2026-06-29 09:03:00 in R:</b>
+
+<b>7 59 10 6</b><br>
+con=file("means_1300t_1r_6s_FI130", "rb");<br>
+v<-c(readBin(con,"double",1300,size=4))<br>
+shapiro.test (v)<br>
+par(mfrow=c(1,1))<br>
+d <- density(v)<br>
+plot(d)<br>
+rez <- t.test(v, conf.level=0.9999)<br>
+ci <- rez$conf.int<br>
+ci[1]<br>
+ci[2]<br>
+ci[2]/ci[1]<br>
+
+Shapiro-Wilk normality test
+
+data:  v<br>
+W = 0.74833, p-value < 2.2e-16
+
+[1] 10.50157<br>
+[1] 12.4874<br>
+[1] 1.189098<br>
 
 <b>Statistics of gemini-3.5-flash 2026-06-09 08:05:00 in R:</b>
 
