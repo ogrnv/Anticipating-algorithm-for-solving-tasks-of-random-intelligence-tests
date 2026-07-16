@@ -16,20 +16,22 @@ The code should then issue as TTSR results x0, y00, x1, y01 from the array, igno
 Optimal means "in accordance with the goal of the test round".
 <br><br>
 <b>The known best results of intelligence tests of AI-generated code for pv2a.c</b><br>the data was obtained with saving global variables before each call of an AI ​​code and restoring the variables after that:<br><br>
-8\*8 7 59 1300 6&nbsp; <b>86.998</b> gemini-3.5-flash us 2026-06-29 09:03:00<br><br>
-8\*8 7 42 3000 12&nbsp; <b>310.967</b> gemini-3.5-flash us 2026-06-09 08:05:00<br><br>
-8\*8 7 59 &nbsp;650 12&nbsp; <b>59.399</b> gemini-3.5-flash us 2026-06-09 08:05:00<br><br>
-8\*8 7 59 1300 6&nbsp; <b>54.749</b> gemini-3.5-flash us 2026-06-09 08:05:00<br><br>
- * &nbsp; &nbsp; the number of:
- * &nbsp; &nbsp; cells of the board
- * &nbsp; &nbsp; chip types
- * &nbsp; &nbsp; chips on the board
- * &nbsp; &nbsp; rounds in a test
- * &nbsp; &nbsp; steps in a round
- * intelligence = 1000 / average number of moves made per step
- * AI name
- * country
- * date and time of the code generation
+| Grid | NChipT | Chips | Rounds | SinR | **Intelligence** | Model | Region | Timestamp |
+|------|------|-------|-------|-----|------------|-------|--------|-----------|
+|8×8|7|59|1300|6| **86.998** |gemini-3.5-flash|us|2026-06-29|09:03:00|
+|8×8|7|42|3000|12| **310.967** |gemini-3.5-flash|us|2026-06-09|08:05:00|
+|8×8|7|59|650|12| **59.399** |gemini-3.5-flash|us|2026-06-09|08:05:00|
+|8×8|7|59|1300|6| **54.749** |gemini-3.5-flash|us|2026-06-09|08:05:00|
+|8×8|7|42|3000|12| **121.469** |kimi-K3-Max|cn|2026-07-16|18:02:00|
+|8×8|7|59|1300|6| **9.030** |kimi-K3-Max|cn|2026-07-16|18:02:00|
+<br>
+Where:<br>
+&nbsp; &nbsp; NChipT - the number of chip types<br>
+&nbsp; &nbsp; Chips - chips on the board<br>
+&nbsp; &nbsp; Rounds - rounds in a test<br>
+&nbsp; &nbsp; SinR -steps in a round<br>
+&nbsp; &nbsp; Intelligence = 1000 / average number of moves made per step<br>
+&nbsp; &nbsp; Timestamp - date and time of the code generation<br><br>
 
 <b>Statistics of gemini-3.5-flash 2026-06-29 09:03:00 in R:</b>
 
