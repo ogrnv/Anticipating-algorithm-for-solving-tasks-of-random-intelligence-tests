@@ -18,7 +18,7 @@ Optimal means "in accordance with the goal of the test round".
 <b>The known best results of intelligence tests of AI-generated code for pv2a.c</b><br>the data was obtained with saving global variables before each call of an AI ​​code and restoring the variables after that:<br><br>
 | Grid | NChipT | Chips | Rounds | SinR | **Intelligence** | Model | Region | Timestamp |
 |------|------|-------|-------|-----|------------|-------|--------|-----------|
-|8×8|7|59|1300|6| **86.998** |gemini-3.5-flash|us|2026-06-29 09:03:00|
+|8×8|7|59|1300|6| **200.427** |gemini-3.6-flash-high|us|2026-07-22 09:15:00|
 |8×8|7|42|3000|12| **310.967** |gemini-3.5-flash|us|2026-06-09 08:05:00|
 |8×8|7|59|650|12| **59.399** |gemini-3.5-flash|us|2026-06-09 08:05:00|
 |8×8|7|59|1300|6| **54.749** |gemini-3.5-flash|us|2026-06-09 08:05:00|
