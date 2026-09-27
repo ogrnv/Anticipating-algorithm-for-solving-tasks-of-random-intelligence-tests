@@ -31,7 +31,7 @@ Where:<br>
 &nbsp; &nbsp; Intelligence = 1000 / average number of moves made per step<br>
 &nbsp; &nbsp; Timestamp - date and time of the code generation<br><br>
 
-<b>Statistics of gemini-3.5-flash 2026-07-22 09:15:00 in R:</b>
+<b>Statistics of gemini-3.6-flash 2026-07-22 09:15:00 in R:</b>
 
 <b>7 59 3000 6</b><br>
 con=file("means_3000t_1r_6s_raw_1x3000_6-8x8-7-59", "rb");<br>
