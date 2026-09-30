@@ -1,6 +1,6 @@
 # Anticipating-algorithm-for-solving-tasks-of-random-intelligence-tests
 
-Although only heuristic algorithms can be found for solving random tasks, the success of such algorithms is determined by the complexity of the algorithms (their level of intelligence).
+Although only heuristic algorithms can be found for solving random tasks, the successfulness of such algorithms is determined by the complexity of the algorithms (their level of intelligence).
 
 When a LLM solves a complex task of random intelligence tests it as a rule results in infinite loops or infinite wandering. 
 
