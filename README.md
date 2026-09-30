@@ -25,12 +25,7 @@ Where:<br>
 &nbsp; &nbsp; Intelligence = 1000 / average number of moves made per step<br>
 &nbsp; &nbsp; Timestamp - date and time of the code generation<br><br>
 
-Since the intelligence assessment results differ even for the same algorithm, they must be normalized against a global standard.
-The only way is to use the best results achieved globally throughout history to calculate the other metrics relative to them.
-
-For example, the 311.649 and 202.621 could be taken as 1. Then, the Kimi results should be calculated as follows: 0.3897622=121.469/311.649 and 0.044151396=8.946/202.621
-
-For greater clarity, the most difficult-to-achieve result can be adopted as the standard i.e. 1. In our data, this value is 202.621
+Since results from assessments of intellectual capabilities are determined by the parameters, the most difficult-to-achieve result could be adopted as a unified standard for greater clarity. In our data, this value is 202.621
 
 <b>Statistics of gemini-3.6-flash 2026-07-22 09:15:00 in R:</b>
 
