@@ -1,12 +1,11 @@
 # Anticipating-algorithm-for-solving-tasks-of-random-intelligence-tests
 
+Although heuristic algorithms can be found for solving random tasks, the success of such algorithms is determined by the complexity of the algorithms (their level of intelligence).<br>November 24, 2015
 
 When a LLM solves a complex task of random intelligence tests it as a rule results in infinite loops or infinite wandering. 
 
 In the anticipating algorithm AI should first create a future state of the test board with chips. And then it should come to the state. 
 The determination of the future state eliminates the loops or wanderings.
-
-Anticipating algorithm recalls the fragment: "A spider conducts operations that resemble those of a weaver, and a bee puts to shame many an architect in the construction of her cells. But what distinguishes the worst architect from the best of bees is this, that the architect raises his structure in imagination before he erects it in reality." from Karl Marx's Capital. 
 
 This is a example of prompt for the algorithm:
 
@@ -18,6 +17,8 @@ Optimal means "in accordance with the goal of the test round".
 <b>The known best results of intelligence tests of AI-generated code for pv2a.c</b><br>the data was obtained with saving global variables before each call of an AI ​​code and restoring the variables after that:<br><br>
 | Grid | NChipT | Chips | Rounds | SinR | **Intelligence** | Model | Region | Timestamp |
 |------|------|-------|-------|-----|------------|-------|--------|-----------|
+|8×8|7|42|6000|12| **311.649** |gemini-3.5-flash|us|2026-06-09 08:05:00|
+|8×8|7|42|6000|12| **264.076** |gemini-3.6-flash|us|2026-07-22 09:15:00|
 |8×8|7|59|3000|6| **202.621** |gemini-3.6-flash-high|us|2026-07-22 09:15:00|
 |8×8|7|59|3000|6| **8.946** |kimi-K3-Max|cn|2026-07-16 18:02:00|
 |8×8|7|42|3000|12| **310.967** |gemini-3.5-flash|us|2026-06-09 08:05:00|
@@ -30,6 +31,13 @@ Where:<br>
 &nbsp; &nbsp; SinR -steps in a round<br>
 &nbsp; &nbsp; Intelligence = 1000 / average number of moves made per step<br>
 &nbsp; &nbsp; Timestamp - date and time of the code generation<br><br>
+
+Since the resulting intelligences differ even for the same algorithm, they must be normalized against a global standard.
+The only way is to use the best results achieved globally throughout history to calculate the other metrics relative to them.
+
+For example, the 311.649 and 202.621 could be taken as 1. Then, the Kimi results should be calculated as follows: 0.3897622=121.469/311.649 and 0.044151396=8.946/202.621
+
+For greater clarity, the most difficult-to-achieve result can be adopted as the standard i.e. 1. In our data, this value is 202.621
 
 <b>Statistics of gemini-3.6-flash 2026-07-22 09:15:00 in R:</b>
 
