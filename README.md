@@ -1,19 +1,12 @@
 # Anticipating-algorithm-for-solving-tasks-of-random-intelligence-tests
 
-Although [only] heuristic algorithms can be found for solving random tasks, the success of such algorithms is determined by the complexity of the algorithms (their level of intelligence).<br>November 24, 2015
+Although only heuristic algorithms can be found for solving random tasks, the success of such algorithms is determined by the complexity of the algorithms (their level of intelligence).
 
 When a LLM solves a complex task of random intelligence tests it as a rule results in infinite loops or infinite wandering. 
 
 In the anticipating algorithm AI should first create a future state of the test board with chips. And then it should come to the state. 
 The determination of the future state eliminates the loops or wanderings.
 
-This is a example of prompt for the algorithm:
-
-Your code should first rearrange the chips of a given TB to obtain a different optimal TB in which formation of a straight horizontal or vertical or diagonal line of five or more chips with the same marking is completed. 
-The code should then make an array of optimal moves i.e. array from-to addresses leading from the given TB to the optimal TB.
-The code should then issue as TTSR results x0, y00, x1, y01 from the array, ignoring new input TBs until the step completes.
-Optimal means "in accordance with the goal of the test round".
-<br><br>
 <b>The known best results of intelligence tests of AI-generated code for pv2a.c</b><br>the data was obtained with saving global variables before each call of an AI ​​code and restoring the variables after that:<br><br>
 | Grid | NChipT | Chips | Rounds | SinR | **Intelligence** | Model | Region | Timestamp |
 |------|------|-------|-------|-----|------------|-------|--------|-----------|
