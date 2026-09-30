@@ -1,6 +1,6 @@
 # Anticipating-algorithm-for-solving-tasks-of-random-intelligence-tests
 
-Although heuristic algorithms can be found for solving random tasks, the success of such algorithms is determined by the complexity of the algorithms (their level of intelligence).<br>November 24, 2015
+Although [only] heuristic algorithms can be found for solving random tasks, the success of such algorithms is determined by the complexity of the algorithms (their level of intelligence).<br>November 24, 2015
 
 When a LLM solves a complex task of random intelligence tests it as a rule results in infinite loops or infinite wandering. 
 
@@ -32,7 +32,7 @@ Where:<br>
 &nbsp; &nbsp; Intelligence = 1000 / average number of moves made per step<br>
 &nbsp; &nbsp; Timestamp - date and time of the code generation<br><br>
 
-Since the resulting intelligences differ even for the same algorithm, they must be normalized against a global standard.
+Since the intelligence assessment results differ even for the same algorithm, they must be normalized against a global standard.
 The only way is to use the best results achieved globally throughout history to calculate the other metrics relative to them.
 
 For example, the 311.649 and 202.621 could be taken as 1. Then, the Kimi results should be calculated as follows: 0.3897622=121.469/311.649 and 0.044151396=8.946/202.621
