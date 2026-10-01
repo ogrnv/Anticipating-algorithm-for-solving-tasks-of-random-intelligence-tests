@@ -11,6 +11,7 @@ The determination of the future state eliminates the loops or wanderings.
 | Grid | NChipT | Chips | Rounds | SinR | **Intelligence** | Model | Region | Timestamp |
 |------|------|-------|-------|-----|------------|-------|--------|-----------|
 |8×8|7|59|10000|1| **183.177** |gemini-3.6-flash-high|us|2026-07-22 09:15:00|
+|8×8|7|59|10000|1| **8.378** |kimi-K3-Max|cn|2026-07-16 18:02:00|
 |8×8|7|42|6000|12| **311.649** |gemini-3.5-flash|us|2026-06-09 08:05:00|
 |8×8|7|42|6000|12| **264.076** |gemini-3.6-flash|us|2026-07-22 09:15:00|
 |8×8|7|59|3000|6| **202.621** |gemini-3.6-flash-high|us|2026-07-22 09:15:00|
