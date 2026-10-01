@@ -10,6 +10,7 @@ The determination of the future state eliminates the loops or wanderings.
 <b>The known best results of intelligence tests of AI-generated code for pv2a.c</b><br>the data was obtained with saving global variables before each call of an AI ​​code and restoring the variables after that:<br><br>
 | Grid | NChipT | Chips | Rounds | SinR | **Intelligence** | Model | Region | Timestamp |
 |------|------|-------|-------|-----|------------|-------|--------|-----------|
+|8×8|7|59|10000|1| **183.177** |gemini-3.6-flash-high|us|2026-07-22 09:15:00|
 |8×8|7|42|6000|12| **311.649** |gemini-3.5-flash|us|2026-06-09 08:05:00|
 |8×8|7|42|6000|12| **264.076** |gemini-3.6-flash|us|2026-07-22 09:15:00|
 |8×8|7|59|3000|6| **202.621** |gemini-3.6-flash-high|us|2026-07-22 09:15:00|
@@ -25,7 +26,7 @@ Where:<br>
 &nbsp; &nbsp; Intelligence(for specific Grid,NChipT,Chips,SinR values) = 1000 / average number of moves made per step<br>
 &nbsp; &nbsp; Timestamp - date and time of the code generation<br><br>
 
-For the sake of simplicity, the best of the most difficult-to-achieve and statistically significant results can be adopted as a unified standard of the algorithm intelligence. In the table, this value is so far 202.621.
+For the sake of simplicity, the best of the most difficult-to-achieve and statistically significant results can be adopted as a unified standard of the algorithm intelligence. In the table, this value is so far 183.177.
 
 <b>Statistics of gemini-3.6-flash 2026-07-22 09:15:00 in R:</b>
 
