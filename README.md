@@ -22,11 +22,10 @@ Where:<br>
 &nbsp; &nbsp; Chips - chips on the board<br>
 &nbsp; &nbsp; Rounds - rounds in a test<br>
 &nbsp; &nbsp; SinR -steps in a round<br>
-&nbsp; &nbsp; Intelligence = 1000 / average number of moves made per step<br>
+&nbsp; &nbsp; Intelligence(for specific Grid,NChipT,Chips,SinR values) = 1000 / average number of moves made per step<br>
 &nbsp; &nbsp; Timestamp - date and time of the code generation<br><br>
 
-The table shows that the intelligence of an algorithm is a multivariable function whose domain is a set of possible parameters.<br>
-For the sake of simplicity, the most difficult-to-achieve and statistically significant result can be adopted as a unified standard of the algorithm intelligence. In the table, this value is so far 202.621.
+For the sake of simplicity, the best of the most difficult-to-achieve and statistically significant results can be adopted as a unified standard of the algorithm intelligence. In the table, this value is so far 202.621.
 
 <b>Statistics of gemini-3.6-flash 2026-07-22 09:15:00 in R:</b>
 
