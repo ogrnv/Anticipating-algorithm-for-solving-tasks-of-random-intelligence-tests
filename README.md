@@ -25,7 +25,8 @@ Where:<br>
 &nbsp; &nbsp; Intelligence = 1000 / average number of moves made per step<br>
 &nbsp; &nbsp; Timestamp - date and time of the code generation<br><br>
 
-Since results from assessments of intellectual capabilities are determined by the parameters, the most difficult-to-achieve result could be adopted as a unified standard for greater clarity. In our data, this value is 202.621
+The table shows that the intelligence of an algorithm is a multivariable function whose domain is a set of possible parameters.<br>
+For the sake of simplicity, the most difficult-to-achieve and statistically significant result can be adopted as a unified standard of the algorithm intelligence. In the table, this value is so far 202.621.
 
 <b>Statistics of gemini-3.6-flash 2026-07-22 09:15:00 in R:</b>
 
