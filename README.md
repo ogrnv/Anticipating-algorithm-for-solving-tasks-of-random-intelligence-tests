@@ -10,6 +10,9 @@ The determination of the future state eliminates the loops or wanderings.
 <b>The known best results of intelligence tests of AI-generated code for pv2a.c</b><br>the data was obtained with saving global variables before each call of an AI ​​code and restoring the variables after that:<br><br>
 | Grid | NChipT | Chips | Rounds | SinR | **Intelligence** | Model | Region | Timestamp |
 |------|------|-------|-------|-----|------------|-------|--------|-----------|
+|8×8|7|59|1000|6| **0.611** |The Monte Carlo method|~~|2026-10-02 08:00:00|
+|8×8|7|59|500|12| **0.624** |The Monte Carlo method|~~|2026-10-02 08:00:00|
+|8×8|7|59|6000|1| **0.721** |The Monte Carlo method|~~|2026-10-02 08:00:00|
 |8×8|7|59|10000|1| **183.177** |gemini-3.6-flash-high|us|2026-07-22 09:15:00|
 |8×8|7|59|10000|1| **8.378** |kimi-K3-Max|cn|2026-07-16 18:02:00|
 |8×8|7|42|6000|12| **311.649** |gemini-3.5-flash|us|2026-06-09 08:05:00|
@@ -27,7 +30,8 @@ Where:<br>
 &nbsp; &nbsp; Intelligence(for specific Grid,NChipT,Chips,SinR values) = 1000 / average number of moves made per step<br>
 &nbsp; &nbsp; Timestamp - date and time of the code generation<br><br>
 
-For the sake of simplicity, the best of the most difficult-to-achieve and statistically significant results can be adopted as a unified standard of the algorithm intelligence. In the table, this value is so far 183.177.
+For the sake of simplicity, the best of the most difficult-to-achieve and statistically significant results can be adopted as a unified standard of the algorithm intelligence. In the table, this value is so far 183.177.<br>
+Later, a different requiring a more strategic thinking set of Grid, NChipT, Chips, SinR values may be selected. For the Monte Carlo method, it is 8x8 7 59 6.
 
 <b>Statistics of gemini-3.6-flash 2026-07-22 09:15:00 in R:</b>
 
