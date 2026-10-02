@@ -24,11 +24,11 @@ Where:<br>
 &nbsp; &nbsp; Chips - chips on the board<br>
 &nbsp; &nbsp; Rounds - rounds in a test<br>
 &nbsp; &nbsp; SinR -steps in a round<br>
-&nbsp; &nbsp; Intelligence(for specific Grid,NChipT,Chips,SinR values) = 1000 / average number of moves made per step<br>
+&nbsp; &nbsp; Intelligence(for specific Grid, NChipT, Chips, SinR values) = 1000 / average number of moves made per step<br>
 &nbsp; &nbsp; Timestamp - date and time of the code generation<br><br>
 
 For the sake of simplicity, the best of the most difficult-to-achieve and statistically significant results can be adopted as a unified standard of the algorithm intelligence. In the table, this value is so far 183.177.<br>
-Later, a different requiring a more strategic thinking set of Grid, NChipT, Chips, SinR values may be selected. For the Monte Carlo method, it is 8x8 7 59 6:<br>
+Later, a different requiring more strategic thinking set of Grid, NChipT, Chips, SinR values may be selected. For the Monte Carlo method, it is 8x8 7 59 6:<br>
 | Grid | NChipT | Chips | Rounds | SinR | **Intelligence** |
 |------|------|-------|-------|-----|------------|
 |8×8|7|59|1000|6| **0.611** |
