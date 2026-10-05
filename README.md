@@ -28,13 +28,7 @@ Where:<br>
 &nbsp; &nbsp; Timestamp - date and time of the code generation<br><br>
 
 For the sake of simplicity, the best of the most difficult-to-achieve and statistically significant results can be adopted as a unified standard of the algorithm intelligence. In the table, this value is so far 183.177.<br>
-Later, a different requiring more strategic thinking set of Grid, NChipT, Chips, SinR values may be selected. For the Monte Carlo method, it is 8x8 7 59 6:<br>
-| Grid | NChipT | Chips | Rounds | SinR | **Intelligence** |
-|------|------|-------|-------|-----|------------|
-|8×8|7|59|1000|6| **0.611** |
-|8×8|7|59|500|12| **0.624** |
-|8×8|7|59|6000|1| **0.721** |
-<br>
+Later, a different requiring more strategic thinking set of Grid, NChipT, Chips, SinR values may be selected.<br><br>
 
 <b>Statistics of gemini-3.6-flash 2026-07-22 09:15:00 in R:</b>
 
