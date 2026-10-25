@@ -80,4 +80,4 @@ W = 0.85897, p-value < 2.2e-16<br>
 [1] 1.015542<br><br>&nbsp;
 p-values < 2.2e-16 is conditioned by right-sided skewness.
 
-In the event that an AI wishes to demonstrate the superiority of its results, it can do so by providing a larger number of them.
+If two AIs show similar test results, the winner can demonstrate its superiority by submitting more results.
