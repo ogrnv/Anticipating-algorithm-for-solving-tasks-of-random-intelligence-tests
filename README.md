@@ -80,4 +80,44 @@ W = 0.85897, p-value < 2.2e-16<br>
 [1] 1.015542<br><br>&nbsp;
 p-values < 2.2e-16 is conditioned by right-sided skewness.
 
+Estimations obtained with using Central Limit Theorem for means_3000t_1r_12s_raw_1x3000_12-8x8-7-42:
+
+clt <- function(x, n, sz) {  
+  sms <- c()  
+  for (i in 1:n) {  
+    sms[i] <- mean(sample(x, sz, replace = TRUE))  
+  }  
+  par(mfrow = c(1, 1))  
+  plot(density(sms))  
+  rez <- t.test(sms, conf.level = 0.9999)  
+  ci <- rez$conf.int  
+  list(  
+    mean = mean(sms),  
+    sd = sd(sms),  
+    shapiro = shapiro.test(sms),  
+    ci = ci,  
+    ci_ratio = ci[2] / ci[1],  
+    ci_midpoint = mean(ci)  
+  )  
+}  
+  
+clt(v, 5000, 10000)  
+
+$mean  
+[1] 3.215625  
+$sd  
+[1] 0.00349583  
+$shapiro  
+Shapiro-Wilk normality test  
+data:  sms  
+W = 0.99967, p-value = 0.6065  
+$ci  
+[1] 3.215433 3.215818  
+attr(,"conf.level")  
+[1] 0.9999  
+$ci_ratio  
+[1] 1.00012  
+$ci_midpoint  
+[1] 3.215625  
+
 If two AIs show similar test results, the winner can demonstrate its superiority by submitting more results.
