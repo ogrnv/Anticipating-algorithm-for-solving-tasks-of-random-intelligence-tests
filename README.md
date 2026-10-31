@@ -80,8 +80,8 @@ W = 0.85897, p-value < 2.2e-16<br>
 [1] 1.015542<br><br>&nbsp;
 p-values < 2.2e-16 is conditioned by right-sided skewness.
 
-Estimations obtained with using Central Limit Theorem for means_3000t_1r_12s_raw_1x3000_12-8x8-7-42:
-
+**Estimations obtained with using Central Limit Theorem by a clt function:**  
+  
 clt <- function(x, n, sz) {  
   sms <- c()  
   for (i in 1:n) {  
@@ -101,8 +101,29 @@ clt <- function(x, n, sz) {
   )  
 }  
   
+**for means_3000t_1r_6s_raw_1x3000_6-8x8-7-59:**  
+  
 clt(v, 5000, 10000)  
-
+$mean  
+[1] 4.934841  
+$sd  
+[1] 0.02425373  
+$shapiro  
+Shapiro-Wilk normality test  
+data:  sms  
+W = 0.99957, p-value = 0.335  
+$ci  
+[1] 4.933505 4.936176  
+attr(,"conf.level")  
+[1] 0.9999  
+$ci_ratio  
+[1] 1.000541  
+$ci_midpoint  
+[1] 4.934841  
+  
+**for means_3000t_1r_12s_raw_1x3000_12-8x8-7-42:**  
+  
+clt(v, 5000, 10000)  
 $mean  
 [1] 3.215625  
 $sd  
@@ -120,4 +141,4 @@ $ci_ratio
 $ci_midpoint  
 [1] 3.215625  
 
-If two AIs show similar test results, the winner can demonstrate its superiority by submitting more results.
+If two AIs show similar test results, the winner can demonstrate its superiority by providing a greater number of test results.
