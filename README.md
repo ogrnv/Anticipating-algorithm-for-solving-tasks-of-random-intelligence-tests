@@ -10,6 +10,7 @@ The determination of the future state eliminates the loops or wanderings.
 <b>The known best results of intelligence tests of AI-generated code for pv2a.c</b><br>the data was obtained with saving global variables before each call of an AI ​​code and restoring the variables after that:<br><br>
 |RG| Grid | NChipT | Chips | Rounds | SinR | **Intelligence** | Model | Region | Timestamp |
 |--|------|------|-------|-------|-----|------------|-------|--------|-----------|
+|mt|8×8|7|59|10000|1| **190.064** |gemini-3.6-flash-high|us|2026-07-22 09:15:00|
 |  |8×8|7|59|10000|1| **184.311** |qwen4-Max|cn|2026-11-26 21:15:00|
 |  |8×8|7|59|10000|1| **183.177** |gemini-3.6-flash-high|us|2026-07-22 09:15:00|
 |mt|8×8|7|59|10000|1| **177.708** |qwen4-Max|cn|2026-11-26 21:15:00|
