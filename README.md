@@ -8,28 +8,23 @@ In the anticipating algorithm AI should first create a future state of the test 
 The determination of the future state eliminates the loops or wanderings.
 
 <b>The known best results of intelligence tests of AI-generated code for pv2a.c</b><br>the data was obtained with saving global variables before each call of an AI ​​code and restoring the variables after that:<br><br>
-|RG| Grid | NChipT | Chips | Rounds | SinR | **Intelligence** | Model | Region | Timestamp |
-|--|------|------|-------|-------|-----|------------|-------|--------|-----------|
-|mt|8×8|7|42|6000|12| **317.846** |qwen4-Max|cn|2026-11-26 21:15:00|
-|  |8×8|7|42|6000|12| **317.428** |qwen4-Max|cn|2026-11-26 21:15:00|
-|  |8×8|7|42|6000|12| **311.822** |gemini-3.8-flash|us|2026-10-18 08:15:00|
-|  |8×8|7|42|6000|12| **311.649** |gemini-3.5-flash|us|2026-06-09 08:05:00|
-|  |8×8|7|42|6000|12| **264.076** |gemini-3.6-flash|us|2026-07-22 09:15:00|
-|mt|8×8|7|59|3000|6| **208.919** |qwen4-Max|cn|2026-11-26 21:15:00|
-|  |8×8|7|59|3000|6| **208.191** |qwen4-Max|cn|2026-11-26 21:15:00|
-|  |8×8|7|59|3000|6| **202.621** |gemini-3.6-flash-high|us|2026-07-22 09:15:00|
-|  |8×8|7|59|3000|6| **8.946** |kimi-K3-Max|cn|2026-07-16 18:02:00|
-|  |8×8|7|42|3000|12| **310.967** |gemini-3.5-flash|us|2026-06-09 08:05:00|
-|  |8×8|7|42|3000|12| **121.469** |kimi-K3-Max|cn|2026-07-16 18:02:00|
-|mt|8×8|7|59|10000|1| **190.064** |gemini-3.6-flash-high|us|2026-07-22 09:15:00|
-|  |8×8|7|59|10000|1| **184.311** |qwen4-Max|cn|2026-11-26 21:15:00|
-|  |8×8|7|59|10000|1| **183.177** |gemini-3.6-flash-high|us|2026-07-22 09:15:00|
-|mt|8×8|7|59|10000|1| **177.708** |qwen4-Max|cn|2026-11-26 21:15:00|
-|  |8×8|7|59|10000|1| **8.378** |kimi-K3-Max|cn|2026-07-16 18:02:00|
+| Grid | NChipT | Chips | Rounds | SinR | **Intelligence** | Model | Region | Timestamp |
+|------|------|-------|-------|-----|------------|-------|--------|-----------|
+|8×8|7|59|80000|1| **182.774** |qwen4-Max|cn|2026-11-26 21:15:00|
+|8×8|7|59|10000|1| **183.177** |gemini-3.6-flash-high|us|2026-07-22 09:15:00|
+|8×8|7|59|10000|1| **8.378** |kimi-K3-Max|cn|2026-07-16 18:02:00|
+|8×8|7|42|6000|12| **317.428** |qwen4-Max|cn|2026-11-26 21:15:00|
+|8×8|7|42|6000|12| **311.822** |gemini-3.8-flash|us|2026-10-18 08:15:00|
+|8×8|7|42|6000|12| **311.649** |gemini-3.5-flash|us|2026-06-09 08:05:00|
+|8×8|7|42|6000|12| **264.076** |gemini-3.6-flash|us|2026-07-22 09:15:00|
+|8×8|7|59|3000|6| **208.191** |qwen4-Max|cn|2026-11-26 21:15:00|
+|8×8|7|59|3000|6| **202.621** |gemini-3.6-flash-high|us|2026-07-22 09:15:00|
+|8×8|7|59|3000|6| **8.946** |kimi-K3-Max|cn|2026-07-16 18:02:00|
+|8×8|7|42|3000|12| **310.967** |gemini-3.5-flash|us|2026-06-09 08:05:00|
+|8×8|7|42|3000|12| **121.469** |kimi-K3-Max|cn|2026-07-16 18:02:00|
 
 <br>
 Where:<br>
-&nbsp; &nbsp; RG - used random number generator: spaces - arc4random_uniform, mt - mt19937<br>
 &nbsp; &nbsp; NChipT - the number of chip types<br>
 &nbsp; &nbsp; Chips - chips on the board<br>
 &nbsp; &nbsp; Rounds - rounds in a test<br>
@@ -150,4 +145,3 @@ $ci_ratio
 $ci_midpoint  
 [1] 3.215625  
 
-If two AIs show similar test results, the winner can demonstrate its superiority by providing a greater number of test results.
